@@ -31,7 +31,7 @@ public class PatientService {
          Patient savedPatient = patientRepository.save(patient);
 
          //2. convert model/entity to dto
-        PatientResponse patientResponse = new PatientResponse();git
+        PatientResponse patientResponse = new PatientResponse();
         patientResponse.setName(savedPatient.getName());
         patientResponse.setVaccinated(savedPatient.isVaccinated());
         patientResponse.setEmailid(savedPatient.getEmailId());
